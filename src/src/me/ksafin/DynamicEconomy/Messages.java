@@ -37,6 +37,7 @@ public class Messages {
 	public static String regionContracted;
 	public static String maxLoans;
 	public static String loanAccountNotFound;
+	public static String noRoomInInventory;
 	
 
 	
@@ -76,6 +77,7 @@ public class Messages {
 	    regionContracted = config.getString("region-contracted","&2Region contracted!");
 	    maxLoans = config.getString("max-loans","&2You have the maximum number of loans allowed.");
 	    loanAccountNotFound = config.getString("loan-account-not-found","&2The Bank is not available, contact your server admin");
+	    noRoomInInventory = config.getString("no-inventory-room","&2There is not enough space in your inventory to complete the  transaction!");
 	}
 	
 	

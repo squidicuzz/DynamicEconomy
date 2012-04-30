@@ -24,7 +24,7 @@ import org.bukkit.Bukkit;
 import couk.Adamki11s.Extras.Colour.ExtrasColour;
 import couk.Adamki11s.Extras.Inventory.ExtrasInventory;
 
-import me.smickles.DynamicMarket.Invoice;
+//import me.smickles.DynamicMarket.Invoice;
 import net.milkbowl.vault.economy.Economy;
 import net.minecraft.server.EntityPlayer;
 
@@ -63,6 +63,7 @@ public class Transaction implements Runnable {
 	
 	public boolean buy(Player player, String[] args) {
 		String stringPlay = player.getName();
+		Inventory inventory = player.getInventory();
 		
 		if ((args.length == 0) || (args.length > 2)) {
 			color.sendColouredMessage(player, DynamicEconomy.prefix + "&2Wrong Command Usage. &f/buy [Item] (Amount)");
@@ -146,6 +147,13 @@ public class Transaction implements Runnable {
 				}
 			
 			}
+		}
+		
+		if (inventory.firstEmpty() == -1)
+		{
+			color.sendColouredMessage(player, DynamicEconomy.prefix +  Messages.noRoomInInventory);
+			Utility.writeToLog(stringPlay + " attempted to buy " + purchaseAmount + " of '" + itemName + "', but there is not enough room in the players inventory");
+			return false;
 		}
 		
 		if (purchaseAmount <= 0) {

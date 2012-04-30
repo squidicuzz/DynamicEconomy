@@ -7,7 +7,7 @@ import couk.Adamki11s.AutoUpdater.*;
 
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.permission.*;
-import net.milkbowl.vault.regions.Regions;
+//import net.milkbowl.vault.regions.Regions;
 import net.minecraft.server.RegionFileCache;
 
 import org.bukkit.Bukkit;
