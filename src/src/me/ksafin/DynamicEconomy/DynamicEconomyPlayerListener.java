@@ -127,7 +127,7 @@ public class DynamicEconomyPlayerListener implements Listener {
     	}
     }
     
-    public int getExpBylevel(int level) {
+    /*public int getExpBylevel(int level) {
     	if (level == 0) {
     		return -3;
     	}
@@ -161,9 +161,9 @@ public class DynamicEconomyPlayerListener implements Listener {
     	int experience = (int)(total - ln + sum);
     	
     	return experience;
-    }
+    }*/
     
-    @EventHandler
+    /*@EventHandler
     public void onEnchantItem(final EnchantItemEvent event) {
     	Player player = event.getEnchanter();
     	
@@ -185,7 +185,7 @@ public class DynamicEconomyPlayerListener implements Listener {
 		log.info("Player Level In Event: " + player.getLevel());
 		log.info("Player Exp In Event: " + player.getExp());
     	
-    }
+    }*/
     
     public boolean setPermission(Permission perm) {
     	permission = perm;
