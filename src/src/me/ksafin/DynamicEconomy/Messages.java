@@ -38,6 +38,7 @@ public class Messages {
 	public static String maxLoans;
 	public static String loanAccountNotFound;
 	public static String noRoomInInventory;
+	public static String bannedInRegion;
 	
 
 	
@@ -69,6 +70,7 @@ public class Messages {
 		notEnoughStock = config.getString("not-enough-stock","&2There is not enough stock of this item.");
 		purchaseSuccess = config.getString("purchase-success","&2Purchase Success!");
 	    notWithinRegion = config.getString("not-within-region","&2You are not within an economy region!");
+	    bannedInRegion = config.getString("item-banned-in-region","&2This item is banned in this region and cannot be traded.");
 	    saleSuccess = config.getString("sale-success","&2Sale Success!");
 	    stockAdded = config.getString("stock-added","&2Stock succesfully added.");
 	    stockRemoved = config.getString("stock-removed","&2Stock succesfully removed.");
